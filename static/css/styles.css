@@ -1,28 +1,36 @@
+/* General Reset */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
 /* Estilo general */
 body {
   font-family: Arial, sans-serif;
-  margin: 20px;
-  background-color: #3a464a;
-  color: #333;
+  margin: 0;
+  justify-content: space-between;
+  align-items: center;
+  position: sticky;
+  top: 0;
 }
 
-/* Encabezados */
-h1 {
-  color: #ff3c00;
-  text-align: center;
-  font-size: 2.5em;
-  margin-bottom: auto;
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  margin: 1rem 0;
+  line-height: 1.2;
 }
 
-h2 {
-  color: #f6fe00;
+p {
+  line-height: 1.6;
+  margin: 10px 0;
+  color: #d4d8dd;
 }
 
-h3 {
-  color: #93a3a3;
-}
-
-/* Listas */
 ul {
   list-style-type: square;
   margin-left: 20px;
@@ -32,64 +40,211 @@ ol {
   margin-left: 20px;
 }
 
-ul li, ol li {
+ul li,
+ol li {
   margin: 5px 0;
   padding: 5px;
-  color: #18ec82;
-  
-}
-p {
-  line-height: 1.6;
-  margin: 10px 0;
-  color: #18ec82;
-}
-/* Imágenes */
-img {
-  width:120px;
-  height: auto;
-  margin: 10px;
-  border: 2px solid #dee2e6;
-  border-radius: 10px;
-  align-items: flex-start;
+  color: #d4d8dd;
 }
 
-/* Tabla */
-table {
+/* Mini librería de colores */
+.color-dark-blue {
+  color: #1a2d42;
+}
+.color-blue-gray {
+  color: #2e4156;
+}
+.color-medium-gray {
+  color: #aab7b7;
+}
+.color-light-gray {
+  color: #c0c8ca;
+}
+.color-lighter-gray {
+  color: #d4d8dd;
+}
+.bg-dark-blue {
+  background: #1a2d42;
+}
+.bg-blue-gray {
+  background: #2e4156;
+}
+.bg-medium-gray {
+  background: #aab7b7;
+}
+.bg-light-gray {
+  background: #c0c8ca;
+}
+.bg-lighter-gray {
+  background: #d4d8dd;
+}
+
+/* Navbar */
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 1rem 2rem;
+  background-color: #1a2d42; /* Color del navbar */
+  color: white; /* Color del texto */
+  position: sticky;
+  top: 0;
+  z-index: 1000;
+  width: 100%; /* Asegura que ocupe todo el ancho */
+  height: 100%; /* Aumenta la altura del navbar */
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); /* Sombra para darle profundidad */
+}
+
+.navbar .logo {
+  font-size: 1.8rem;
+  font-weight: bold;
+  color: white; /* Color del logo */
+}
+
+.nav-links {
+  color: white;
+  list-style: none;
+  display: flex;
+  gap: 2rem; /* Aumenta el espacio entre los enlaces */
+  margin-right: 2rem; /* Mueve los enlaces más a la derecha */
+}
+
+.nav-links a {
+  text-decoration: none;
+  color: white; /* Color de los enlaces */
+  font-weight: 500;
+  transition: color 0.3s ease;
+}
+
+.nav-links a:hover {
+  color: #1603a2; /* Color al pasar el cursor */
+}
+
+/* Botón de menú (burger) */
+.burger {
+  display: none; /* Oculto por defecto */
+  flex-direction: column;
+  gap: 0.3rem;
+  cursor: pointer;
+}
+
+.burger span {
+  width: 25px;
+  height: 3px;
+  background: #d4d8dd;
+}
+
+/* Hero Section */
+.hero-section {
+  background-color: #2e4156; /* Fondo del encabezado */
+  color: #d4d8dd; /* Color del texto */
+  text-align: center;
+  margin-top: -1rem; /* Para eliminar el espacio entre el navbar y el encabezado */
+  padding: 8rem 2rem;
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+  overflow: hidden;
+}
+
+.hero-section h1 {
+  font-size: 3rem;
+  margin-bottom: 1rem;
+}
+
+.hero-section p {
+  font-size: 1.2rem;
+  margin-bottom: 2rem;
+}
+
+.hero-section .btn-primary {
+  display: inline-block;
+  padding: 0.8rem 1.5rem;
+  background-color: #aab7b7; /* Color del botón */
+  color: #1a2d42; /* Color del texto del botón */
+  border-radius: 5px;
+  text-decoration: none;
+  font-weight: bold;
+  transition: background-color 0.3s ease;
+}
+
+.hero-section .btn-primary:hover {
+  background-color: #c0c8ca; /* Color al pasar el cursor */
+}
+
+/* Sección Sobre Mí */
+.sobre-mi {
+  text-align: center;
+  margin-bottom: 3rem;
+  font-size: 1.5rem;
+  padding: 3rem;
+  
+}
+
+/* Tareas pendientes */
+.tareas-section {
+  padding: 4rem 2rem;
+  margin: 1rem 0;
+  border-radius: 8px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+/* Tabla de horarios */
+.table-container table {
   width: 100%;
   border-collapse: collapse;
   margin-top: 20px;
   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Sombra para la tabla */
 }
 
-th, td {
-  border: 1px solid  #18ec82;
+th,
+td {
+  border: 1px solid #d4d8dd;
   padding: 10px;
   text-align: left;
 }
 
 th {
-  background-color:  #18ec82;
-  color: #495057;
-  text-transform: uppercase; 
+  background-color: #aab7b7;
+  color: #1a2d42;
+  text-transform: uppercase;
 }
 
-td {
-  background-color:  #20e78385;
-}
-
-/* Efecto hover en las filas */
 tbody tr:hover {
-  background-color: #495057; /* Color de fondo al pasar el cursor */
+  background-color: #c0c8ca; /* Color de fondo al pasar el cursor */
   transform: scale(1.02); /* Efecto de zoom ligero */
   transition: all 0.2s ease-in-out; /* Transición suave */
 }
 
 /* Enlaces */
 a {
-  color: #0d6efd;
+  color: #d4d8dd;
   text-decoration: none;
 }
 
 a:hover {
   text-decoration: underline;
+}
+
+/* Imágenes */
+img {
+  width: 120px;
+  height: auto;
+  margin: 2rem auto;
+  border-radius: 30%;
+  align-items: flex-start;
+  filter: drop-shadow(
+    1px 1px 20px rgba(212, 212, 212, 0.981)
+  ); /* Sombra para las imágenes */
+}
+
+/* Footer */
+footer {
+  background-color: #1a2d42;
+  color: #d4d8dd;
+  text-align: center;
+  padding: 1rem 0;
 }
