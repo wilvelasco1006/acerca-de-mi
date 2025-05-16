@@ -1,0 +1,158 @@
+/* Estilos generales */
+body {
+    font-family: Arial, sans-serif;
+    max-width: 600px;
+    margin: 0 auto;
+    padding: 20px;
+    background-color: #f5f5f5;
+    color: #333;
+}
+
+/* Contenedor del formulario */
+form {
+    background-color: #fff;
+    padding: 25px;
+    border-radius: 8px;
+    box-shadow: 0 0 15px rgba(0, 0, 0, 0.1);
+    margin-bottom: 20px;
+}
+
+/* Título */
+h1 {
+    text-align: center;
+    color: #2E4156;
+    margin-bottom: 25px;
+    font-size: 28px;
+}
+
+/* Etiquetas de formulario */
+label {
+    display: block;
+    margin: 12px 0 6px;
+    color: #1A2D42;
+    font-weight: bold;
+}
+
+/* Campos de entrada y selección */
+input, select {
+    width: 100%;
+    padding: 12px;
+    margin-bottom: 18px;
+    border: 1px solid #C0C8CA;
+    border-radius: 4px;
+    box-sizing: border-box;
+    font-size: 16px;
+    transition: border-color 0.3s;
+}
+
+input:focus, select:focus {
+    outline: none;
+    border-color: #2E4156;
+    box-shadow: 0 0 5px rgba(46, 65, 86, 0.3);
+}
+
+/* Estilo de los botones */
+button {
+    width: 100%;
+    padding: 12px 15px;
+    background-color: #1A2D42;
+    color: white;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    font-size: 16px;
+    transition: background-color 0.3s, transform 0.1s;
+}
+
+#btn-salir {
+    width: 100%;
+    padding: 12px 15px;
+    background-color: #1A2D42;
+    color: white;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    font-size: 16px;
+    transition: background-color 0.3s, transform 0.1s;
+    background-color: #c76663;
+}
+#btn-salir:hover {
+    background-color: #d41a17;
+}
+button:hover {
+    background-color: #2E4156;
+}
+
+button:active {
+    transform: scale(0.98);
+}
+
+/* Resultado */
+#resultado {
+    margin-top: 25px;
+    padding: 15px;
+    background-color: #AAB7B7;
+    color: #1A2D42;
+    border-radius: 4px;
+    font-weight: bold;
+    text-align: center;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    font-size: 18px;
+}
+
+/* Historial */
+.historial {
+    margin-top: 25px;
+    background-color: #fff;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+.historial h2 {
+    margin-top: 0;
+    margin-bottom: 15px;
+    color: #2E4156;
+    font-size: 22px;
+    border-bottom: 2px solid #C0C8CA;
+    padding-bottom: 10px;
+}
+
+.historial ul {
+    padding-left: 0;
+    list-style-type: none;
+}
+
+.historial li {
+    padding: 10px;
+    border-bottom: 1px solid #D4D8DD;
+    color: #1A2D42;
+}
+
+.historial li:last-child {
+    border-bottom: none;
+}
+
+.historial li:nth-child(odd) {
+    background-color: #f9fafb;
+}
+
+/* Efectos hover en el historial */
+.historial li:hover {
+    background-color: #D4D8DD;
+}
+
+/* Estilos responsivos */
+@media (max-width: 480px) {
+    form {
+        padding: 15px;
+    }
+    
+    h1 {
+        font-size: 24px;
+    }
+    
+    input, select, button {
+        padding: 10px;
+    }
+}
