@@ -79,6 +79,7 @@ ol li {
   background: #d4d8dd;
 }
 
+
 /* Navbar */
 .navbar {
   display: flex;
@@ -252,6 +253,8 @@ ol li {
   .arrow-down {
     margin-left: 10px;
   }
+
+  
   
   /* La hero section necesita un ajuste para dispositivos móviles */
   .hero-section {
@@ -310,68 +313,229 @@ ol li {
   padding: 3rem;
   
 }
-
-/* Tareas pendientes */
-.tareas-section {
-  padding: 4rem 2rem;
-  margin: 1rem 0;
-  border-radius: 8px;
-  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
-}
-
-/* Tabla de horarios */
-.table-container table {
-  width: 100%;
-  border-collapse: collapse;
-  margin-top: 20px;
-  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Sombra para la tabla */
-}
-
-th,
-td {
-  border: 1px solid #d4d8dd;
-  padding: 10px;
-  text-align: left;
-}
-
-th {
-  background-color: #aab7b7;
-  color: #1a2d42;
-  text-transform: uppercase;
-}
-
-tbody tr:hover {
-  background-color: #c0c8ca; /* Color de fondo al pasar el cursor */
-  transform: scale(1.02); /* Efecto de zoom ligero */
-  transition: all 0.2s ease-in-out; /* Transición suave */
-}
-
-/* Enlaces */
-a {
-  color: #d4d8dd;
-  text-decoration: none;
-}
-
-a:hover {
-  text-decoration: underline;
-}
-
 /* Imágenes */
 img {
-  width: 120px;
-  height: auto;
-  margin: 2rem auto;
-  border-radius: 30%;
-  align-items: flex-start;
+  
   filter: drop-shadow(
     1px 1px 20px rgba(212, 212, 212, 0.981)
   ); /* Sombra para las imágenes */
 }
-
-/* Footer */
-footer {
+/* Estilos mejorados para la sección de tareas */
+.tareas-section {
   background-color: #1a2d42;
   color: #d4d8dd;
+  padding: 2rem;
+  border-radius: 8px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15);
+  margin-bottom: 2rem;
+}
+
+.tareas-section h2 {
+  color: #d4d8dd;
   text-align: center;
-  padding: 1rem 0;
+  margin-bottom: 1.5rem;
+  font-size: 1.8rem;
+  border-bottom: 2px solid #aab7b7;
+  padding-bottom: 0.5rem;
+}
+
+.tareas-section ul {
+  background-color: #2e4156;
+  border-radius: 6px;
+  padding: 1.5rem 2rem;
+}
+
+.tareas-section li {
+  border-bottom: 1px solid rgba(212, 216, 221, 0.2);
+  padding: 12px 8px;
+  transition: background-color 0.2s ease;
+}
+
+.tareas-section li:last-child {
+  border-bottom: none;
+}
+
+.tareas-section li:hover {
+  background-color: #344661;
+}
+
+/* Estilos mejorados para la sección de horario */
+.horario-section {
+  background-color: #1a2d42;
+  padding: 2rem;
+  border-radius: 8px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15);
+  margin-bottom: 2rem;
+}
+
+.horario-section h2 {
+  color: #d4d8dd;
+  text-align: center;
+  margin-bottom: 1.5rem;
+  font-size: 1.8rem;
+  border-bottom: 2px solid #aab7b7;
+  padding-bottom: 0.5rem;
+}
+
+.table-container {
+  overflow-x: auto; /* Para tablas responsivas */
+  margin-top: 1rem;
+  background-color: #2e4156;
+  border-radius: 6px;
+  padding: 1rem;
+}
+
+.table-container table {
+  width: 100%;
+  border-collapse: collapse;
+  box-shadow: none;
+}
+
+th, td {
+  border: 1px solid rgba(212, 216, 221, 0.3);
+  padding: 12px 15px;
+  text-align: left;
+}
+
+th {
+  background-color: #344661;
+  color: #d4d8dd;
+  font-weight: bold;
+}
+
+td {
+  color: #d4d8dd;
+}
+
+tbody tr:nth-child(even) {
+  background-color: rgba(46, 65, 86, 0.7);
+}
+
+tbody tr:hover {
+  background-color: #3d5272;
+  transform: none; /* Eliminamos el efecto de zoom que puede ser disruptivo */
+}
+
+/* Estilos mejorados para la sección de proyectos */
+.proyectos-section {
+  background-color: #1a2d42;
+  padding: 2rem;
+  border-radius: 8px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15);
+  margin-bottom: 2rem;
+}
+
+.proyectos-section h2 {
+  color: #d4d8dd;
+  text-align: center;
+  margin-bottom: 1.5rem;
+  font-size: 1.8rem;
+  border-bottom: 2px solid #aab7b7;
+  padding-bottom: 0.5rem;
+}
+
+.proyectos-section article {
+  background-color: #2e4156;
+  border-radius: 6px;
+  padding: 1.5rem;
+  margin-bottom: 1.5rem;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+  transition: transform 0.2s ease;
+}
+
+.proyectos-section article:hover {
+  transform: translateY(-3px);
+}
+
+.proyectos-section h3 {
+  color: #d4d8dd;
+  margin-bottom: 1rem;
+  font-size: 1.4rem;
+}
+
+.proyectos-section p {
+  margin-bottom: 1rem;
+}
+
+.proyectos-section span {
+  font-weight: bold;
+  color: #9df8f8; /* Color más claro para que destaque */
+  margin-right: 0.5rem;
+}
+
+.proyectos-section a {
+  display: inline-block;
+  background-color: #aab7b7;
+  color: #1a2d42;
+  padding: 0.5rem 1rem;
+  border-radius: 4px;
+  text-decoration: none;
+  font-weight: bold;
+  transition: background-color 0.2s ease;
+  margin-top: 0.5rem;
+}
+
+.proyectos-section a:hover {
+  background-color: #c0c8ca;
+  text-decoration: none;
+}
+
+/* Estilos mejorados para la sección de redes sociales */
+.redes-section {
+  background-color: #1a2d42;
+  padding: 2rem;
+  border-radius: 8px;
+  text-align: center;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15);
+  margin-bottom: 2rem;
+}
+
+.redes-section h2 {
+  color: #d4d8dd;
+  margin-bottom: 1.5rem;
+  font-size: 1.8rem;
+  border-bottom: 2px solid #aab7b7;
+  padding-bottom: 0.5rem;
+  display: inline-block;
+}
+
+.redes-section ul {
+  display: flex;
+  justify-content: center;
+  gap: 1.5rem;
+  list-style-type: none;
+  margin: 1.5rem 0;
+  flex-wrap: wrap;
+}
+
+.redes-section li {
+  background-color: #2e4156;
+  border-radius: 6px;
+  transition: transform 0.2s ease;
+  width: auto;
+  padding: 0;
+}
+
+.redes-section li:hover {
+  transform: translateY(-3px);
+}
+
+.redes-section a {
+  display: block;
+  padding: 1rem 1.5rem;
+  color: #d4d8dd;
+  text-decoration: none;
+  font-weight: bold;
+}
+
+.redes-section a:hover {
+  color: #c0c8ca;
+  text-decoration: none;
+}
+
+/* Arreglos adicionales para consistencia */
+h2 {
+  color: #d4d8dd;
+  text-align: center;
+  margin-bottom: 1.5rem;
 }
