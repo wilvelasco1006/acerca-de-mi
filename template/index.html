@@ -1,200 +1,218 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Mi Página Web</title>
-    <link rel="stylesheet" href="/static/css/styles.css" />
-  </head>
 
-  <body class="bg-blue-gray">
-    <!-- Barra de navegación -->
-    <nav class="navbar bg-dark-blue">
-      <div class="logo color-light-gray">
-        Wil <span class="color-lighter-gray">Velasco</span>
-      </div>
-      <ul class="nav-links color-lighter-gray">
-        <li><a href="#sobre-mi">Sobre Mí</a></li>
-        <li><a href="#proyectos">Proyectos</a></li>
-        <li><a href="#contacto">Contacto</a></li>
-      </ul>
-      <button class="burger btn">
-        <span></span>
-        <span></span>
-        <span></span>
-      </button>
-    </nav>
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Mi Página Web</title>
+  <link rel="stylesheet" href="/static/css/styles.css" />
+</head>
 
-    <!-- Sección de inicio -->
-    <header id="inicio" class="hero-section">
-      <h1>Bienvenido a Mi Página Web</h1>
-      <p>Descubre más sobre mí y mis proyectos.</p>
-      <a href="#sobre-mi" class="btn-primary">Saber Más</a>
-    </header>
-    <hr />
-    <br />
-    <main>
-      <!-- Sección Sobre Mí -->
-      <section id="sobre-mi" class="sobre-mi">
-        <h2>Sobre Mí</h2>
-        <p>
-          ¡Hola! Mi nombre es Wilmer Ulcue. Me gusta la tecnología y el
-          desarrollo de software, pronto me graduaré como tecnólogo en
-          desarrollo de software. Estoy emocionado por compartir mis Proyectos y
-          conocimientos con ustedes.
-        </p>
+<body class="bg-blue-gray">
+  <!-- Barra de navegación -->
+  <nav class="navbar bg-dark-blue">
+    <div class="logo color-light-gray">
+      Wil <span class="color-lighter-gray">Velasco</span>
+    </div>
 
-        <!-- Imagen personal -->
-        <h2>Este soy yo</h2>
-        <img src="/static/img/my-avatar.png" alt="Mi Foto" />
-        <!-- Pasatiempos -->
-        <h2>Algunos de mis hobbies</h2>
-        <ul class="hobbies-list">
-          <li>Leer algún libro de mi interés.</li>
-          <li>Ver películas.</li>
-          <li>Ver video tutoriales de algún tema tecnológico.</li>
-          <li>Escuchar música o podcast de diversos temas.</li>
-          <li>Realizar tareas de la universidad.</li>
-        </ul>
-      </section>
-      <!-- Tareas pendientes -->
-      <section id="tareas" class="tareas-section">
-        <h2>Mis Tareas Pendientes</h2>
-        <p>
-          No tenemos la capacidad de hacer multiples tareas al tiempo, lo mejor,
-          es tener una lista de tareas por orden de prioridad. A continuación te
-          muestro una lista de mis tareas pendientes:
-        </p>
-        <ol class="tasks-list">
-          <li>Trabajar en mi parte del proximo sprint</li>
-          <li>Terminar un proyecto personal</li>
-          <li>Estudiar para el examen de Analisis y diseño de algoritmos</li>
-          <li>Empezar el proyecto de Analisis y Calculo numérica</li>
-        </ol>
-      </section>
+    <button id="nav-toggle" class="burger btn">
+      <span></span>
+      <span></span>
+      <span></span>
+    </button>
 
-      <!-- Tabla de horarios -->
-      <section id="horario" class="horario-section">
-        <h2>Mi Horario Semanal</h2>
-        <p>Este es mi horario semanal, con respecto al estudio:</p>
-        <div class="table-container">
-          <table>
-            <thead>
-              <tr>
-                <th>Día</th>
-                <th>Hora</th>
-                <th>Actividad</th>
-              </tr>
-            </thead>
-            <tbody>
-              <tr>
-                <td>Lunes</td>
-                <td>
-                  8:00 AM - 10:00 AM
-                  <br />
-                  <br />
-                  2:00 PM - 4:00 PM
-                </td>
-                <td>
-                  Presentar revision y Presentación del Sprint
-                  <br />
-                  <br />
-                  Asisistir al curso de programación de Talento tech
-                </td>
-              </tr>
-              <tr>
-                <td>Martes</td>
-                <td>
-                  8:00 AM - 12:00 PM
-                  <br />
-                  <br />
-                  2:00 PM - 4:00 PM
-                </td>
-                <td>
-                  Hacer oficios varios en la casa y tareas de la universidad
-                  <br />
-                  <br />
-                  Asisistir al curso de programación de Talento tech
-                </td>
-              </tr>
-              <tr>
-                <td>Miercoles</td>
-                <td>
-                  8:00 AM - 10:00 AM
-                  <br />
-                  <br />
-                  2:00 PM - 4:00 PM
-                </td>
-                <td>
-                  Entrar a la clase de Impactos ambientales (Modalidad virtual)
-                  <br />
-                  <br />
-                  Asisistir al curso de programación de Talento tech
-                </td>
-              </tr>
-              <tr>
-                <td>Jueves</td>
-                <td>
-                  7:00 AM - 10:00 AM
-                  <br />
-                  <br />
-                  2:00 PM - 4:00 PM
-                </td>
-                <td>
-                  Entrar a la clase de Analisis y Cálculo numérico (Modalidad
-                  virtual)
-                  <br />
-                  <br />
-                  Asisistir al curso de programación de Talento tech
-                </td>
-              </tr>
-              <tr>
-                <td>Viernes</td>
-                <td>
-                  10:00 AM - 1:00 PM
-                  <br />
-                  <br />
-                  2:00 PM - 4:00 PM
-                </td>
-                <td>
-                  Asistir a la clase de Ciberseguridad
-                  <br />
-                  <br />
-                  Asisistir al curso de programación de Talento tech
-                </td>
-              </tr>
-              <tr>
-                <td>Sábado</td>
-                <td>
-                  8:00 AM - 10:00 AM
-                  <br />
-                  <br />
-                  2:00 PM - 6:00 PM
-                </td>
-                <td>
-                  Asistir a la clase de Pre-Practicas
-                  <br />
-                  <br />
-                  Asisistir a la clase de Analisis y diseño de algoritmos
-                </td>
-              </tr>
-              <tr>
-                <td>Domingo</td>
-                <td>8:00 AM - 11:59 PM</td>
-                <td>
-                  Combinación de descansar, realizar oficios varios, ocio y
-                  hacer tareas de la universidad
-                </td>
-              </tr>
-            </tbody>
-          </table>
+    <ul class="nav-links color-lighter-gray">
+      <li><a href="#sobre-mi">Sobre Mí</a></li>
+      <li class="dropdown">
+        <a href="#proyectos" class="dropbtn">Proyectos <i class="arrow-down"></i></a>
+        <div class="dropdown-content">
+          <a href="#proyecto1">Proyecto 1</a>
+          <a href="#proyecto2">Proyecto 2</a>
+          <a href="#proyecto3">Proyecto 3</a>
         </div>
-      </section>
+      </li>
+      <li class="dropdown">
+        <a href="#habilidades" class="dropbtn">Habilidades <i class="arrow-down"></i></a>
+        <div class="dropdown-content">
+          <a href="#frontend">Frontend</a>
+          <a href="#backend">Backend</a>
+          <a href="#otras">Otras</a>
+        </div>
+      </li>
+      <li><a href="#contacto">Contacto</a></li>
+    </ul>
+  </nav>
 
-      <!-- Sección Proyectos -->
-      <section id="proyectos" class="proyectos-section">
-        <h2>Proyectos</h2>
-        <!-- <div class="cards-container">
+  <!-- Sección de inicio -->
+  <header id="inicio" class="hero-section">
+    <h1>Bienvenido a Mi Página Web</h1>
+    <p>Descubre más sobre mí y mis proyectos.</p>
+    <a href="#sobre-mi" class="btn-primary">Saber Más</a>
+  </header>
+  <hr />
+  <br />
+  <main>
+    <!-- Sección Sobre Mí -->
+    <section id="sobre-mi" class="sobre-mi">
+      <h2>Sobre Mí</h2>
+      <p>
+        ¡Hola! Mi nombre es Wilmer Ulcue. Me gusta la tecnología y el
+        desarrollo de software, pronto me graduaré como tecnólogo en
+        desarrollo de software. Estoy emocionado por compartir mis Proyectos y
+        conocimientos con ustedes.
+      </p>
+
+      <!-- Imagen personal -->
+      <h2>Este soy yo</h2>
+      <img src="/static/img/my-avatar.png" alt="Mi Foto" />
+      <!-- Pasatiempos -->
+      <h2>Algunos de mis hobbies</h2>
+      <ul class="hobbies-list">
+        <li>Leer algún libro de mi interés.</li>
+        <li>Ver películas.</li>
+        <li>Ver video tutoriales de algún tema tecnológico.</li>
+        <li>Escuchar música o podcast de diversos temas.</li>
+        <li>Realizar tareas de la universidad.</li>
+      </ul>
+    </section>
+    <!-- Tareas pendientes -->
+    <section id="tareas" class="tareas-section">
+      <h2>Mis Tareas Pendientes</h2>
+      <p>
+        No tenemos la capacidad de hacer multiples tareas al tiempo, lo mejor,
+        es tener una lista de tareas por orden de prioridad. A continuación te
+        muestro una lista de mis tareas pendientes:
+      </p>
+      <ol class="tasks-list">
+        <li>Trabajar en mi parte del proximo sprint</li>
+        <li>Terminar un proyecto personal</li>
+        <li>Estudiar para el examen de Analisis y diseño de algoritmos</li>
+        <li>Empezar el proyecto de Analisis y Calculo numérica</li>
+      </ol>
+    </section>
+
+    <!-- Tabla de horarios -->
+    <section id="horario" class="horario-section">
+      <h2>Mi Horario Semanal</h2>
+      <p>Este es mi horario semanal, con respecto al estudio:</p>
+      <div class="table-container">
+        <table>
+          <thead>
+            <tr>
+              <th>Día</th>
+              <th>Hora</th>
+              <th>Actividad</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td>Lunes</td>
+              <td>
+                8:00 AM - 10:00 AM
+                <br />
+                <br />
+                2:00 PM - 4:00 PM
+              </td>
+              <td>
+                Presentar revision y Presentación del Sprint
+                <br />
+                <br />
+                Asisistir al curso de programación de Talento tech
+              </td>
+            </tr>
+            <tr>
+              <td>Martes</td>
+              <td>
+                8:00 AM - 12:00 PM
+                <br />
+                <br />
+                2:00 PM - 4:00 PM
+              </td>
+              <td>
+                Hacer oficios varios en la casa y tareas de la universidad
+                <br />
+                <br />
+                Asisistir al curso de programación de Talento tech
+              </td>
+            </tr>
+            <tr>
+              <td>Miercoles</td>
+              <td>
+                8:00 AM - 10:00 AM
+                <br />
+                <br />
+                2:00 PM - 4:00 PM
+              </td>
+              <td>
+                Entrar a la clase de Impactos ambientales (Modalidad virtual)
+                <br />
+                <br />
+                Asisistir al curso de programación de Talento tech
+              </td>
+            </tr>
+            <tr>
+              <td>Jueves</td>
+              <td>
+                7:00 AM - 10:00 AM
+                <br />
+                <br />
+                2:00 PM - 4:00 PM
+              </td>
+              <td>
+                Entrar a la clase de Analisis y Cálculo numérico (Modalidad
+                virtual)
+                <br />
+                <br />
+                Asisistir al curso de programación de Talento tech
+              </td>
+            </tr>
+            <tr>
+              <td>Viernes</td>
+              <td>
+                10:00 AM - 1:00 PM
+                <br />
+                <br />
+                2:00 PM - 4:00 PM
+              </td>
+              <td>
+                Asistir a la clase de Ciberseguridad
+                <br />
+                <br />
+                Asisistir al curso de programación de Talento tech
+              </td>
+            </tr>
+            <tr>
+              <td>Sábado</td>
+              <td>
+                8:00 AM - 10:00 AM
+                <br />
+                <br />
+                2:00 PM - 6:00 PM
+              </td>
+              <td>
+                Asistir a la clase de Pre-Practicas
+                <br />
+                <br />
+                Asisistir a la clase de Analisis y diseño de algoritmos
+              </td>
+            </tr>
+            <tr>
+              <td>Domingo</td>
+              <td>8:00 AM - 11:59 PM</td>
+              <td>
+                Combinación de descansar, realizar oficios varios, ocio y
+                hacer tareas de la universidad
+              </td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+    </section>
+
+    <!-- Sección Proyectos -->
+    <section id="proyectos" class="proyectos-section">
+      <h2>Proyectos</h2>
+      <!-- <div class="cards-container">
         <div class="card">
           <h3>Proyecto 1</h3>
           <p>Descripción breve del proyecto 1.</p>
@@ -208,52 +226,45 @@
           <p>Descripción breve del proyecto 3.</p>
         </div>
       </div> -->
-      </section>
-      <!-- Redes sociales -->
-      <section id="redes" class="redes-section">
-        <h2>Si quieres saber más puedes encontrarme en mis Redes Sociales</h2>
-        <ul>
-          <li>
-            <a href="https://www.facebook.com/share/1ASgTKrtcB/" target="_blank"
-              >Facebook</a
-            >
-          </li>
-          <li>
-            <a
-              href="https://www.instagram.com/will.velasco.10?igsh=NTRnbXNhYmN4ajdh"
-              target="_blank"
-              >instagram</a
-            >
-          </li>
-          <li>
-            <a
-              href="https://www.linkedin.com/in/wilmer-yulian-ulcue-803b0632b?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app"
-              target="_blank"
-              >LinkedIn</a
-            >
-          </li>
-        </ul>
-      </section>
+    </section>
+    <!-- Redes sociales -->
+    <section id="redes" class="redes-section">
+      <h2>Si quieres saber más puedes encontrarme en mis Redes Sociales</h2>
+      <ul>
+        <li>
+          <a href="https://www.facebook.com/share/1ASgTKrtcB/" target="_blank">Facebook</a>
+        </li>
+        <li>
+          <a href="https://www.instagram.com/will.velasco.10?igsh=NTRnbXNhYmN4ajdh" target="_blank">instagram</a>
+        </li>
+        <li>
+          <a href="https://www.linkedin.com/in/wilmer-yulian-ulcue-803b0632b?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app"
+            target="_blank">LinkedIn</a>
+        </li>
+      </ul>
+    </section>
 
-      <!-- Sección Contacto -->
-      <section id="contacto" class="contacto-section">
-        <h2>Contacto</h2>
-        <form action="#" method="post">
-          <label for="name">Nombre:</label>
-          <input type="text" id="name" name="name" required /><br /><br />
+    <!-- Sección Contacto -->
+    <section id="contacto" class="contacto-section">
+      <h2>Contacto</h2>
+      <form action="#" method="post">
+        <label for="name">Nombre:</label>
+        <input type="text" id="name" name="name" required /><br /><br />
 
-          <label for="reason">Razón de contacto:</label>
-          <input type="text" id="reason" name="reason" required /><br /><br />
+        <label for="reason">Razón de contacto:</label>
+        <input type="text" id="reason" name="reason" required /><br /><br />
 
-          <label for="email">Correo electrónico:</label>
-          <input type="email" id="email" name="email" required /><br /><br />
+        <label for="email">Correo electrónico:</label>
+        <input type="email" id="email" name="email" required /><br /><br />
 
-          <button type="submit">Enviar</button>
-        </form>
-      </section>
-    </main>
-    <footer class="footer bg-dark-blue">
-      <p>&copy; 2025 Wilmer Ulcue - Todos los derechos reservados</p>
-    </footer>
-  </body>
+        <button type="submit">Enviar</button>
+      </form>
+    </section>
+  </main>
+  <footer class="footer bg-dark-blue">
+    <p>&copy; 2025 Wilmer Ulcue - Todos los derechos reservados</p>
+  </footer>
+  <script src="/static/script.js"></script>
+</body>
+
 </html>
