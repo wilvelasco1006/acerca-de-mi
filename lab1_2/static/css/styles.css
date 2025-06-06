@@ -1,0 +1,95 @@
+/* Estilo general */
+body {
+  font-family: Arial, sans-serif;
+  margin: 20px;
+  background-color: #3a464a;
+  color: #333;
+}
+
+/* Encabezados */
+h1 {
+  color: #ff3c00;
+  text-align: center;
+  font-size: 2.5em;
+  margin-bottom: auto;
+}
+
+h2 {
+  color: #f6fe00;
+}
+
+h3 {
+  color: #93a3a3;
+}
+
+/* Listas */
+ul {
+  list-style-type: square;
+  margin-left: 20px;
+}
+
+ol {
+  margin-left: 20px;
+}
+
+ul li, ol li {
+  margin: 5px 0;
+  padding: 5px;
+  color: #18ec82;
+  
+}
+p {
+  line-height: 1.6;
+  margin: 10px 0;
+  color: #18ec82;
+}
+/* Imágenes */
+img {
+  width:120px;
+  height: auto;
+  margin: 10px;
+  border: 2px solid #dee2e6;
+  border-radius: 10px;
+  align-items: flex-start;
+}
+
+/* Tabla */
+table {
+  width: 100%;
+  border-collapse: collapse;
+  margin-top: 20px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Sombra para la tabla */
+}
+
+th, td {
+  border: 1px solid  #18ec82;
+  padding: 10px;
+  text-align: left;
+}
+
+th {
+  background-color:  #18ec82;
+  color: #495057;
+  text-transform: uppercase; 
+}
+
+td {
+  background-color:  #20e78385;
+}
+
+/* Efecto hover en las filas */
+tbody tr:hover {
+  background-color: #495057; /* Color de fondo al pasar el cursor */
+  transform: scale(1.02); /* Efecto de zoom ligero */
+  transition: all 0.2s ease-in-out; /* Transición suave */
+}
+
+/* Enlaces */
+a {
+  color: #0d6efd;
+  text-decoration: none;
+}
+
+a:hover {
+  text-decoration: underline;
+}
