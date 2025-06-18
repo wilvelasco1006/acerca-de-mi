@@ -1,0 +1,41 @@
+-- crear tabla de Estudiantes
+CREATE TABLE Estudiantes(
+  id_estudiante int unique primary key auto_increment,
+  nombre varchar(50) not null,
+  edad int(3) not null,
+  ciudad varchar(50) not null
+ );
+ 
+INSERT INTO Estudiantes (nombre, edad, ciudad) VALUES
+('Wilmer', 19, 'Cali'),
+('Luisa', 37, 'Yumbo'),
+('Cristian', 41, 'El caney'),
+('María González', 22, 'Bogotá'),
+('Juan Pérez', 20, 'Medellín'),
+('Ana Rodríguez', 21, 'Barranquilla'),
+('Carlos Sánchez', 19, 'Cartagena'),
+('Laura Martínez', 23, 'Bucaramanga'),
+('Pedro López', 20, 'Yumbo'),
+('Sofía Ramírez', 22, 'Manizales'),
+('Diego Torres', 21, 'Santa Marta'),
+('Valentina Gómez', 19, 'Villavicencio'),
+('Andrés Castro', 24, 'Cali'),
+('Camila Herrera', 20, 'Ibagué'),
+('Javier Suárez', 22, 'Montería'),
+('Daniela Vargas', 21, 'Neiva'),
+('Miguel Ángel Ruiz', 19, 'Pasto'),
+('Isabella Mendoza', 23, 'Armenia'),
+('Ricardo Ospina', 20, 'Sincelejo'),
+('Gabriela Silva', 22, 'Popayán'),
+('Fernando Rojas', 21, 'Cali'),
+('Natalia Jiménez', 19, 'Valledupar'),
+('Óscar Gutiérrez', 24, 'Riohacha');
+
+-- Todos los registros de la tabla
+SELECT * FROM Estudiantes;
+
+-- Estudiantes filtrados por la ciudad de Cali
+SELECT * FROM Estudiantes Where ciudad = 'Cali';
+
+-- Estudiantes mayores de 20 años
+SELECT * FROM Estudiantes Where edad > 20;

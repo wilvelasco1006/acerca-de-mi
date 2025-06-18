@@ -1,0 +1,38 @@
+db.Estudiantes.insertMany([
+    { "nombre": "Juan", "edad": 20, "ciudad": "Bogotá" },
+    { "nombre": "Ana", "edad": 22, "ciudad": "Medellín" },
+    { "nombre": "Luis", "edad": 19, "ciudad": "Cali" },
+    { "nombre": "María González", "edad": 22, "ciudad": "Bogotá" },
+    { "nombre": "Carlos Sánchez", "edad": 19, "ciudad": "Cartagena" },
+    { "nombre": "Laura Martínez", "edad": 23, "ciudad": "Bucaramanga" },
+    { "nombre": "Pedro López", "edad": 20, "ciudad": "Pereira" },
+    { "nombre": "Sofía Ramírez", "edad": 22, "ciudad": "Manizales" },
+    { "nombre": "Diego Torres", "edad": 21, "ciudad": "Santa Marta" },
+    { "nombre": "Valentina Gómez", "edad": 19, "ciudad": "Villavicencio" },
+    { "nombre": "Andrés Castro", "edad": 24, "ciudad": "Cúcuta" },
+    { "nombre": "Camila Herrera", "edad": 20, "ciudad": "Ibagué" },
+    { "nombre": "Javier Suárez", "edad": 22, "ciudad": "Montería" },
+    { "nombre": "Daniela Vargas", "edad": 21, "ciudad": "Neiva" },
+    { "nombre": "Miguel Ángel Ruiz", "edad": 19, "ciudad": "Pasto" },
+    { "nombre": "Isabella Mendoza", "edad": 23, "ciudad": "Armenia" },
+    { "nombre": "Ricardo Ospina", "edad": 20, "ciudad": "Sincelejo" },
+    { "nombre": "Gabriela Silva", "edad": 22, "ciudad": "Popayán" },
+    { "nombre": "Fernando Rojas", "edad": 21, "ciudad": "Tunja" },
+    { "nombre": "Natalia Jiménez", "edad": 19, "ciudad": "Valledupar" },
+    { "nombre": "Óscar Gutiérrez", "edad": 24, "ciudad": "Riohacha" }
+]);
+
+// Mostrar todos los estudiantes
+db.Estudiantes.find().pretty();
+
+// Ejemplo: Estudiantes de Bogotá
+db.Estudiantes.find({ ciudad: "Bogotá" }).pretty();
+
+// Ejemplo: Estudiantes de Medellín
+db.Estudiantes.find({ ciudad: "Medellín" }).pretty();
+
+// Con conteo de resultados
+db.Estudiantes.countDocuments({ ciudad: "Cali" });
+
+// Estudiantes con edad > 20
+db.Estudiantes.find({ edad: { $gt: 20 } }).pretty();
